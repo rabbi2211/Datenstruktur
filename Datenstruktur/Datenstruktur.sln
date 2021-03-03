@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datenstruktur", "Datenstruktur.csproj", "{4B08F343-1930-4A21-8F43-BAA1F1A1CEED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datenstruktur.Tests", "..\Datenstruktur.Tests\Datenstruktur.Tests.csproj", "{D0CDBC0C-617B-4243-A2D5-CF4CC952642F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B08F343-1930-4A21-8F43-BAA1F1A1CEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B08F343-1930-4A21-8F43-BAA1F1A1CEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B08F343-1930-4A21-8F43-BAA1F1A1CEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B08F343-1930-4A21-8F43-BAA1F1A1CEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0CDBC0C-617B-4243-A2D5-CF4CC952642F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CDBC0C-617B-4243-A2D5-CF4CC952642F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CDBC0C-617B-4243-A2D5-CF4CC952642F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CDBC0C-617B-4243-A2D5-CF4CC952642F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4198B0FE-0FF0-4F27-846C-4EDA19182998}
+	EndGlobalSection
+EndGlobal
