@@ -7,10 +7,12 @@ namespace Datenstruktur.Tests
     public class RecursionTests
     {
         Recursion sut = null;
+        Memoization sutMe = null;
         [OneTimeSetUp]
         public void Init()
         {
             sut = new Recursion();
+            sutMe = new Memoization();
         }
         [SetUp]
         public void Setup()
@@ -38,6 +40,27 @@ namespace Datenstruktur.Tests
         {
 
             var result = sut.ElementsInSequence_Recursive(inputArray, inputArray.Length - 1);
+        }
+
+        [Test]
+        [TestCase(3, 4)]
+        [TestCase(4, 8)]
+        [TestCase(5, 13)]
+        [TestCase(50, 20365011074)]
+        public void GetFibbonacciSeries(int inputNumber,long expectedOutput)
+        {
+            var result = sut.FibonacciSeries_Recursive(inputNumber);
+        }
+
+
+        [Test]
+        [TestCase(3, 4)]
+        [TestCase(4, 8)]
+        [TestCase(5, 13)]
+        [TestCase(50, 20365011074)]
+        public void GetFibbonacciSeries_Memotized(int inputNumber, long expectedOutput)
+        {
+            var result = sutMe.FibbonacciSeries_Memotized(inputNumber,new System.Collections.Generic.Dictionary<int, long>());
         }
 
     }
