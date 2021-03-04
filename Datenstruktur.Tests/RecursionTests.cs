@@ -46,8 +46,8 @@ namespace Datenstruktur.Tests
         [TestCase(3, 4)]
         [TestCase(4, 8)]
         [TestCase(5, 13)]
-        [TestCase(50, 20365011074)]
-        public void GetFibbonacciSeries(int inputNumber,long expectedOutput)
+        [TestCase(50, 20365011074), Category("Stress Case")]
+        public void GetFibbonacciSeries(int inputNumber, long expectedOutput)
         {
             var result = sut.FibonacciSeries_Recursive(inputNumber);
         }
@@ -57,10 +57,14 @@ namespace Datenstruktur.Tests
         [TestCase(3, 4)]
         [TestCase(4, 8)]
         [TestCase(5, 13)]
-        [TestCase(50, 20365011074)]
+        [TestCase(50, 20365011074), Category("Stress Case")]
+        [TestCase(100, 4224848179261915075), Category("Stress Case")]
+
+
+
         public void GetFibbonacciSeries_Memotized(int inputNumber, long expectedOutput)
         {
-            var result = sutMe.FibbonacciSeries_Memotized(inputNumber,new System.Collections.Generic.Dictionary<int, long>());
+            var result = sutMe.FibbonacciSeries_Memotized(inputNumber, new System.Collections.Generic.Dictionary<int, long>());
         }
 
     }
